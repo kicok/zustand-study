@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import { BearBox } from './components/BearBox';
+import { Boxies } from './components/Boxies';
+import { CatsBox } from './components/CatsBox';
+import CatsBox2 from './components/CatsBox2';
+import { FoodBox } from './components/FoodBox';
+import { CatsController } from './components/catsController';
+import { SubMenu } from './subMenu/App';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <div>
+        {/* <SubMenu />
+        <CatsBox />
+        <BearBox /> */}
+        <FoodBox />
+        <Boxies />
+      </div>
+      {/* <div>
+        <CatsBox />
+        <CatsBox2 />
+        <CatsController />
+      </div> */}
     </div>
   );
 }
